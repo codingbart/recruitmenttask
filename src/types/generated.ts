@@ -14,7 +14,7 @@ export interface ColumbusRecruitmentData {
   products: [Product, ...Product[]];
 }
 export interface Image {
-  link: string;
+  url: string;
   altText: string;
 }
 export interface Product {
