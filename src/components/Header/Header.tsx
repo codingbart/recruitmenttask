@@ -15,7 +15,7 @@ export default function Header({ logo, title }: Props) {
                 <NextImage
                     src={logo.url}
                     alt={logo.altText}
-                    width={48}
+                    width={120}
                     height={48}
                     className={styles.logo}
                 />
