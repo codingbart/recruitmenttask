@@ -1,0 +1,89 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #100f0f;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  background: #f7f7f7;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.promoBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e63946;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.brandLogo {
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  overflow: hidden;
+}
+
+.description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  overflow: hidden;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.price,
+.newPrice {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.newPrice {
+  color: #e63946;
+}
+
+.oldPrice {
+  font-size: 15px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.promoName {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e63946;
+}
