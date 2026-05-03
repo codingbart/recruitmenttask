@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import { CartProvider } from "@/context/Cart";
 import { getColumbusData } from "@/lib/api";
 export default async function RootLayout({
   children,
@@ -9,11 +10,11 @@ export default async function RootLayout({
   return (
     <html lang="pl">
       <body>
-        <Header logo={data.logo} title={data.title} />
-        <main>
-          {children}
-        </main>
+        <CartProvider>
+          <Header logo={data.logo} title={data.title} />
+          <main>{children}</main>
+        </CartProvider>
       </body>
-    </html >
+    </html>
   );
 }

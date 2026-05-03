@@ -1,6 +1,7 @@
 import NextImage from "next/image";
 import type { Product } from "@/types/generated";
 import styles from "./ProductCard.module.css";
+import Button from "./Button";
 
 type Props = {
   product: Product;
@@ -67,6 +68,7 @@ export default function ProductCard({ product }: Props) {
         {promotion && (
           <span className={styles.promoName}>{promotion.name}</span>
         )}
+        <Button />
       </div>
     </div>
   );
